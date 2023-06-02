@@ -25,7 +25,7 @@ def save(log):
     for i in log:
         ids.append(i[0])
         datas.append(i[1])
-    f = open(f"{loc}/money.txt","w")
+    f = open(f"{loc}/money.txt","w",encoding='utf-8')
     for i in range(len(log)):
         f.write(f"{ids[i]}:{datas[i]}\n")
     f.close()
